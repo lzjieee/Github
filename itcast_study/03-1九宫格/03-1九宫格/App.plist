@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>icon0</string>
+		<key>name</key>
+		<string>一起麻将</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon1</string>
+		<key>name</key>
+		<string>疯狂捕鱼</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon2</string>
+		<key>name</key>
+		<string>藏龙卧虎</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon3</string>
+		<key>name</key>
+		<string>德州扑克</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon4</string>
+		<key>name</key>
+		<string>泡泡龙</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon5</string>
+		<key>name</key>
+		<string>多玩工具箱</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon6</string>
+		<key>name</key>
+		<string>跑男3</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon7</string>
+		<key>name</key>
+		<string>宝石消除</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon8</string>
+		<key>name</key>
+		<string>大话西游</string>
+	</dict>
+</array>
+</plist>

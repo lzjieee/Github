@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>answer</key>
+		<string>彭于晏</string>
+		<key>icon</key>
+		<string>img1</string>
+		<key>title</key>
+		<string>听说</string>
+	</dict>
+	<dict>
+		<key>answer</key>
+		<string>陈奕迅</string>
+		<key>icon</key>
+		<string>img2</string>
+		<key>title</key>
+		<string>k歌之王是我</string>
+	</dict>
+	<dict>
+		<key>answer</key>
+		<string>周杰伦</string>
+		<key>icon</key>
+		<string>img3</string>
+		<key>title</key>
+		<string>不能说的秘密</string>
+	</dict>
+	<dict>
+		<key>answer</key>
+		<string>邓紫棋</string>
+		<key>icon</key>
+		<string>img4</string>
+		<key>title</key>
+		<string>金鱼</string>
+	</dict>
+	<dict>
+		<key>answer</key>
+		<string>张学友</string>
+		<key>icon</key>
+		<string>img5</string>
+		<key>title</key>
+		<string>歌神</string>
+	</dict>
+</array>
+</plist>

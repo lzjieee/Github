@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -9,59 +9,69 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyR-Ft-UZC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gyR-Ft-UZC">
                                 <rect key="frame" x="137" y="36" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="标题-标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5K-so-PET">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题-标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h5K-so-PET">
                                 <rect key="frame" x="87" y="65" width="200" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-nZ-GLi">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="taZ-nZ-GLi">
                                 <rect key="frame" x="255" y="12" width="100" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="coin"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnZ-8p-VBy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="ZnZ-8p-VBy">
                                 <rect key="frame" x="120" y="91" width="135" height="135"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.99938841540000001" green="0.99938841540000001" blue="0.99938841540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" title="Button" image="img1"/>
+                                <connections>
+                                    <action selector="btnIconClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLR-ij-Rh9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkL-GC-jZK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TkL-GC-jZK">
                                 <rect key="frame" x="20" y="102" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.20257483602635151" blue="0.21648235178336372" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="提示">
                                     <color key="titleColor" red="0.9582346907" green="0.9582346907" blue="0.9582346907" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5r-X7-FlP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B5r-X7-FlP">
                                 <rect key="frame" x="309" y="102" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.20257483600000001" blue="0.2164823518" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="放大">
                                     <color key="titleColor" red="0.99938841540000001" green="0.99938841540000001" blue="0.99938841540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnBigImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xB8-gI-hcr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rav-Hp-EZv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rav-Hp-EZv">
                                 <rect key="frame" x="20" y="181" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.20257483600000001" blue="0.2164823518" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="帮助">
                                     <color key="titleColor" red="0.99938841540000001" green="0.99938841540000001" blue="0.99938841540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-ff-1nw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ffB-ff-1nw">
                                 <rect key="frame" x="309" y="181" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.20257483600000001" blue="0.2164823518" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="下一题">
                                     <color key="titleColor" red="0.99938841540000001" green="0.99938841540000001" blue="0.99938841540000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,20 +80,33 @@
                                     <action selector="btnNextClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGS-ML-MKL"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="qsb-Sg-BNi">
+                                <rect key="frame" x="0.0" y="230" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="ogP-ie-gh2">
+                                <rect key="frame" x="0.0" y="295" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="answerView" destination="qsb-Sg-BNi" id="ipg-lr-vsU"/>
+                        <outlet property="btnIcon" destination="ZnZ-8p-VBy" id="Nif-cD-J0k"/>
                         <outlet property="btnNext" destination="ffB-ff-1nw" id="5hw-3b-hle"/>
                         <outlet property="btnScore" destination="taZ-nZ-GLi" id="a3k-GP-VpW"/>
                         <outlet property="lblIndex" destination="gyR-Ft-UZC" id="1bM-yc-Jgc"/>
                         <outlet property="lblTitle" destination="h5K-so-PET" id="LqB-Q7-3qs"/>
+                        <outlet property="optionsView" destination="ogP-ie-gh2" id="Fq6-Cz-Lkz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249.5" y="298.5"/>
+            <point key="canvasLocation" x="133.06666666666666" y="282.57999999999998"/>
         </scene>
     </scenes>
     <resources>

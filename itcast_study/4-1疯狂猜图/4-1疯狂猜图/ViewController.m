@@ -194,6 +194,7 @@
         
         CGFloat answerX = marginLeft + (answerW + margin)*i;
         btnAnswer.frame = CGRectMake(answerX, answerY, answerW, answerH);
+        [btnAnswer setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.answerView addSubview:btnAnswer];
     }
 }
@@ -225,6 +226,43 @@
         optionBtn.backgroundColor = [UIColor whiteColor];
         optionBtn.frame = CGRectMake(optX, optY, optW, optH);
         [self.optionsView addSubview:optionBtn];
+        
+        //创建点击事件
+        [optionBtn addTarget:self action:@selector(optionBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+- (IBAction)optionBtnClicked:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    //1.隐藏当前被点击的按钮
+    btn.hidden = YES;
+    //2.将按钮文字显示到第一个为空的答案钮按上
+    BOOL isFull = YES;
+    NSString *text = [btn titleForState:UIControlStateNormal];
+    //text = btn.currentTitle; 获取当前状态下的文字
+    for (UIButton *answerBtn in self.answerView.subviews)
+    {
+        if(answerBtn.currentTitle == nil)
+        {
+            [answerBtn setTitle:text forState:UIControlStateNormal];
+            break;
+        }
+    }
+    
+    //3.判断答案是否已经填满了，（满了不能再点击待选按钮）
+    for (UIButton *answerBtn in self.answerView.subviews)
+    {
+        if(answerBtn.currentTitle == nil)
+        {
+            isFull = NO;
+            break;
+        }
+    }
+    if(isFull)
+    {
+        //这个view不能再和用户交互
+        self.optionsView.userInteractionEnabled = NO;
     }
 }
 

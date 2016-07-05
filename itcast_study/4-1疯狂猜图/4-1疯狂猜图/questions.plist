@@ -9,6 +9,30 @@
 		<string>img1</string>
 		<key>title</key>
 		<string>听说</string>
+		<key>options</key>
+		<array>
+			<string>是</string>
+			<string>说</string>
+			<string>彭</string>
+			<string>怕</string>
+			<string>开</string>
+			<string>个</string>
+			<string>佛</string>
+			<string>第</string>
+			<string>晏</string>
+			<string>破</string>
+			<string>东</string>
+			<string>分</string>
+			<string>挺</string>
+			<string>哈</string>
+			<string>你</string>
+			<string>人</string>
+			<string>身</string>
+			<string>体</string>
+			<string>可</string>
+			<string>于</string>
+			<string>突</string>
+		</array>
 	</dict>
 	<dict>
 		<key>answer</key>
@@ -17,6 +41,30 @@
 		<string>img2</string>
 		<key>title</key>
 		<string>k歌之王是我</string>
+		<key>options</key>
+		<array>
+			<string>牌</string>
+			<string>而</string>
+			<string>彭</string>
+			<string>怕</string>
+			<string>开</string>
+			<string>个</string>
+			<string>陈</string>
+			<string>以</string>
+			<string>晏</string>
+			<string>破</string>
+			<string>东</string>
+			<string>分</string>
+			<string>奕</string>
+			<string>哈</string>
+			<string>你</string>
+			<string>迅</string>
+			<string>稍</string>
+			<string>配</string>
+			<string>可</string>
+			<string>于</string>
+			<string>突</string>
+		</array>
 	</dict>
 	<dict>
 		<key>answer</key>
@@ -25,6 +73,30 @@
 		<string>img3</string>
 		<key>title</key>
 		<string>不能说的秘密</string>
+		<key>options</key>
+		<array>
+			<string>因</string>
+			<string>时</string>
+			<string>杰</string>
+			<string>怕</string>
+			<string>开</string>
+			<string>个</string>
+			<string>陈</string>
+			<string>以</string>
+			<string>晏</string>
+			<string>破</string>
+			<string>伦</string>
+			<string>分</string>
+			<string>奕</string>
+			<string>哈</string>
+			<string>你</string>
+			<string>迅</string>
+			<string>稍</string>
+			<string>配</string>
+			<string>可</string>
+			<string>于</string>
+			<string>周</string>
+		</array>
 	</dict>
 	<dict>
 		<key>answer</key>
@@ -33,6 +105,30 @@
 		<string>img4</string>
 		<key>title</key>
 		<string>金鱼</string>
+		<key>options</key>
+		<array>
+			<string>因</string>
+			<string>时</string>
+			<string>杰</string>
+			<string>怕</string>
+			<string>开</string>
+			<string>个</string>
+			<string>陈</string>
+			<string>邓</string>
+			<string>晏</string>
+			<string>破</string>
+			<string>伦</string>
+			<string>分</string>
+			<string>紫</string>
+			<string>哈</string>
+			<string>你</string>
+			<string>迅</string>
+			<string>棋</string>
+			<string>配</string>
+			<string>可</string>
+			<string>于</string>
+			<string>进</string>
+		</array>
 	</dict>
 	<dict>
 		<key>answer</key>
@@ -41,6 +137,30 @@
 		<string>img5</string>
 		<key>title</key>
 		<string>歌神</string>
+		<key>options</key>
+		<array>
+			<string>哥</string>
+			<string>升</string>
+			<string>噢</string>
+			<string>怕</string>
+			<string>开</string>
+			<string>个</string>
+			<string>陈</string>
+			<string>邓</string>
+			<string>晏</string>
+			<string>张</string>
+			<string>伦</string>
+			<string>分</string>
+			<string>紫</string>
+			<string>哈</string>
+			<string>学</string>
+			<string>迅</string>
+			<string>棋</string>
+			<string>配</string>
+			<string>可</string>
+			<string>于</string>
+			<string>友</string>
+		</array>
 	</dict>
 </array>
 </plist>

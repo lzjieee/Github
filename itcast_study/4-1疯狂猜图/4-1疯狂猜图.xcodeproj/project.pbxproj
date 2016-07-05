@@ -16,6 +16,7 @@
 		0401D1691D0BDB0E00AE6F7D /* __1____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D1681D0BDB0E00AE6F7D /* __1____Tests.m */; };
 		0401D1741D0BDB0E00AE6F7D /* __1____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D1731D0BDB0E00AE6F7D /* __1____UITests.m */; };
 		0401D1861D0BDD4D00AE6F7D /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0401D1851D0BDD4D00AE6F7D /* questions.plist */; };
+		8AD279751D2B455C00B87595 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD279741D2B455C00B87595 /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0401D1731D0BDB0E00AE6F7D /* __1____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__1____UITests.m"; sourceTree = "<group>"; };
 		0401D1751D0BDB0E00AE6F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0401D1851D0BDD4D00AE6F7D /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		8AD279731D2B455C00B87595 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		8AD279741D2B455C00B87595 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		0401D1811D0BDB4600AE6F7D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				8AD279731D2B455C00B87595 /* Question.h */,
+				8AD279741D2B455C00B87595 /* Question.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0401D1561D0BDB0E00AE6F7D /* ViewController.m in Sources */,
+				8AD279751D2B455C00B87595 /* Question.m in Sources */,
 				0401D1531D0BDB0E00AE6F7D /* AppDelegate.m in Sources */,
 				0401D1501D0BDB0E00AE6F7D /* main.m in Sources */,
 			);
@@ -450,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "4-1疯狂猜图/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lzj.--1----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "4-1疯狂猜图/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lzj.--1----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +542,7 @@
 				0401D17A1D0BDB0E00AE6F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0401D17B1D0BDB0E00AE6F7D /* Build configuration list for PBXNativeTarget "4-1疯狂猜图Tests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +551,7 @@
 				0401D17D1D0BDB0E00AE6F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0401D17E1D0BDB0E00AE6F7D /* Build configuration list for PBXNativeTarget "4-1疯狂猜图UITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +560,7 @@
 				0401D1801D0BDB0E00AE6F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

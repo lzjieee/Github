@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Question.h"
 
-@interface ViewController ()
+@interface ViewController () <UIAlertViewDelegate>
 
 //所有问题的数据
 @property(nonatomic, strong) NSArray *questions;
@@ -30,6 +30,7 @@
 - (IBAction)btnBigImage:(id)sender;
 - (IBAction)btnSmallImage:(id)sender;
 - (IBAction)btnIconClicked:(id)sender;
+- (IBAction)btnTipsClicked:(id)sender;
 
 @end
 
@@ -139,10 +140,31 @@
     [btnCover removeFromSuperview];
 }
 
+//实现UIAlertViewDelegate的代理方法
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"%ld", buttonIndex);
+    if(buttonIndex == 1) //点击确认
+    {
+        self.index = -1;
+        [self nextQuestion];
+    }
+}
+
 - (void)nextQuestion
 {
     //1.索引++
     self.index++;
+    //当没有下一题，return
+    if(self.index == self.questions.count)
+    {
+        NSLog(@"---->is the last question...");
+        //弹出对话框(这里参数delegate是指 一个对象实现了对应delegate(这里ViewController实现了UIAlertViewDelegate))
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"操作提示" message:@"恭喜通关" delegate:self cancelButtonTitle:@"*取消*" otherButtonTitles:@"确认", @"hahaha", nil];
+        [alertView show];
+        return;
+    }
+    
     //2.根据索引获取当前的model数据
     Question *model = self.questions[self.index];
     //3.model数据设置到控件上
@@ -152,6 +174,8 @@
     [self createAnswerBtns:model];
     //5.动态创建待选答案按钮
     [self createOptionsBtns:model];
+    
+    self.optionsView.userInteractionEnabled = YES;
     
 }
 
@@ -196,6 +220,9 @@
         btnAnswer.frame = CGRectMake(answerX, answerY, answerW, answerH);
         [btnAnswer setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.answerView addSubview:btnAnswer];
+        
+        //注册单击事件
+        [btnAnswer addTarget:self action:@selector(btnAnswerClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -216,6 +243,9 @@
         UIButton *optionBtn = [[UIButton alloc] init];
         [optionBtn setTitle:words[i] forState:UIControlStateNormal];
         [optionBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        //每一个optionBtn给一个唯一的值
+        optionBtn.tag = i;
         
         //计算坐标
         int columIndex = i % columns;
@@ -238,19 +268,23 @@
     //1.隐藏当前被点击的按钮
     btn.hidden = YES;
     //2.将按钮文字显示到第一个为空的答案钮按上
-    BOOL isFull = YES;
     NSString *text = [btn titleForState:UIControlStateNormal];
     //text = btn.currentTitle; 获取当前状态下的文字
     for (UIButton *answerBtn in self.answerView.subviews)
     {
         if(answerBtn.currentTitle == nil)
         {
+            //将optBtn的文字和它的tag 给答案按钮
             [answerBtn setTitle:text forState:UIControlStateNormal];
+            answerBtn.tag = btn.tag;
             break;
         }
     }
     
     //3.判断答案是否已经填满了，（满了不能再点击待选按钮）
+    BOOL isFull = YES;
+    //保存用户输入的字符串（答案）
+    NSMutableString *userInput = [NSMutableString string];
     for (UIButton *answerBtn in self.answerView.subviews)
     {
         if(answerBtn.currentTitle == nil)
@@ -258,11 +292,92 @@
             isFull = NO;
             break;
         }
+        else
+        {
+            //answerBtn上有文字就拼接到可变字符串中
+            [userInput appendString:answerBtn.currentTitle];
+        }
     }
+    
+    //4.如果答案满了，判断答案是否正确
     if(isFull)
     {
         //这个view不能再和用户交互
         self.optionsView.userInteractionEnabled = NO;
+        Question *model = self.questions[self.index];
+        //答案正确,字体变蓝色，0.5s后跳到下一题
+        if([model.answer isEqualToString:userInput])
+        {
+            [self setAnswerTitleColor:[UIColor blueColor]];
+            [self addScore:100];
+            [self performSelector:@selector(nextQuestion) withObject:nil afterDelay:.5f];
+        }
+        else
+        {
+            [self setAnswerTitleColor:[UIColor redColor]];
+        }
+    }
+}
+
+//根据指定的分数，加分、减分
+- (void)addScore:(int)score
+{
+    //获取按钮上的现在的分数
+    NSString *str = self.btnScore.currentTitle;
+    int currentScore = str.intValue;
+    //将计算后的数据重新赋值
+    currentScore += score;
+    [self.btnScore setTitle:[NSString stringWithFormat:@"%d", currentScore] forState:UIControlStateNormal];
+}
+
+-(IBAction)btnAnswerClicked:(id)sender
+{
+    //启用view的交互（因为当答案选满后，待选按钮被全部禁用了）
+    self.optionsView.userInteractionEnabled = YES;
+    [self setAnswerTitleColor:[UIColor blackColor]];
+    
+    UIButton *btn = (UIButton *)sender;
+    //1.在“待选按钮”中找到与当前答案按钮的文字一样的按钮，设置该按钮显示出来
+    for (UIButton *optBtn in self.optionsView.subviews)
+    {
+        if(btn.tag == optBtn.tag)
+        {
+            optBtn.hidden = NO;
+            break;
+        }
+    }
+    //2.清空所点击的答案按钮的文字
+    [btn setTitle:nil forState:UIControlStateNormal];
+}
+
+- (void)setAnswerTitleColor:(UIColor *)color
+{
+    for (UIButton *btn in self.answerView.subviews)
+    {
+        [btn setTitleColor:color forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)btnTipsClicked:(id)sender
+{
+    //1.分数-1000
+    [self addScore:-1000];
+    //2.清空答案的按钮，并且回到待选区域中
+    for (UIButton *btn in self.answerView.subviews)
+    {
+        [self btnAnswerClicked:btn];
+    }
+    //3.显示一个正确答案（一个字）到答案区域
+    Question *que = self.questions[self.index];
+    //从第0开始，截取1个字符（参数）
+    NSString *fristChar = [que.answer substringToIndex:1];
+    for (UIButton *optBtn in self.optionsView.subviews)
+    {
+        if([optBtn.currentTitle isEqualToString:fristChar])
+        {
+            [self optionBtnClicked:optBtn];
+            break;
+        }
     }
 }
 

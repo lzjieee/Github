@@ -32,7 +32,7 @@
 //即将开始拖拽
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    NSLog(@"---->即将开始拖拽...scrollViewWillBeginDragging");
+    //NSLog(@"---->即将开始拖拽...scrollViewWillBeginDragging");
 }
 
 //拖拽完毕
@@ -44,7 +44,10 @@
 //正在拖拽
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"---->正在拖拽...scrollViewDidScroll");
+    //NSLog(@"---->正在拖拽...scrollViewDidScroll");
+    
+    NSString *pointStr = NSStringFromCGPoint(scrollView.contentOffset);
+    NSLog(@"---->%@", pointStr);
 }
 
 - (void)viewDidLoad {

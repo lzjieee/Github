@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rET-kS-BRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="DXW-zi-cNm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJV-xB-Tyw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_ad" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-kY-QvE">
+                                        <rect key="frame" x="10" y="0.0" width="145" height="145"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_newsound" translatesAutoresizingMaskIntoConstraints="NO" id="6qm-QK-DUT">
+                                        <rect key="frame" x="165" y="0.0" width="145" height="145"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_hotsound" translatesAutoresizingMaskIntoConstraints="NO" id="tBv-Uu-mvI">
+                                        <rect key="frame" x="10" y="153" width="145" height="145"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_newpeople" translatesAutoresizingMaskIntoConstraints="NO" id="h1E-SN-I9D">
+                                        <rect key="frame" x="165" y="153" width="145" height="145"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_wallspoint" translatesAutoresizingMaskIntoConstraints="NO" id="WXg-m2-VMI">
+                                        <rect key="frame" x="10" y="306" width="145" height="145"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_iwannabehere" translatesAutoresizingMaskIntoConstraints="NO" id="EXP-a3-9X7">
+                                        <rect key="frame" x="10" y="461" width="300" height="75"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_hotpeople" translatesAutoresizingMaskIntoConstraints="NO" id="Gi3-Ja-MbP">
+                                        <rect key="frame" x="165" y="306" width="145" height="145"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKj-L1-WU8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电台" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-Tx-bAH">
+                                        <rect key="frame" x="139" y="21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTZ-Ui-hCA">
+                                        <rect key="frame" x="234" y="21" width="23" height="23"/>
+                                        <state key="normal" image="find_setting_n"/>
+                                        <state key="highlighted" image="find_setting_h"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFy-0D-Wd4">
+                                <rect key="frame" x="0.0" y="435" width="320" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhx-fX-00U">
+                                        <rect key="frame" x="15" y="-2" width="64" height="45"/>
+                                        <state key="normal" image="tab_home_n"/>
+                                        <state key="highlighted" image="tab_home_h"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-VM-hvJ">
+                                        <rect key="frame" x="240" y="-2" width="64" height="45"/>
+                                        <state key="normal" image="tab_share_n"/>
+                                        <state key="highlighted" image="tab_share_h"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-Xe-O1O">
+                                        <rect key="frame" x="128" y="-2" width="64" height="45"/>
+                                        <state key="normal" image="tab_download_n"/>
+                                        <state key="highlighted" image="tab_download_h"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imgLast" destination="EXP-a3-9X7" id="N0b-GS-NeB"/>
+                        <outlet property="scrollView" destination="bJV-xB-Tyw" id="vu3-4r-dGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="find_setting_h" width="23" height="23"/>
+        <image name="find_setting_n" width="23" height="23"/>
+        <image name="finditem_ad" width="145" height="145"/>
+        <image name="finditem_hotpeople" width="145" height="145"/>
+        <image name="finditem_hotsound" width="145" height="145"/>
+        <image name="finditem_iwannabehere" width="300" height="75"/>
+        <image name="finditem_newpeople" width="145" height="145"/>
+        <image name="finditem_newsound" width="145" height="145"/>
+        <image name="finditem_wallspoint" width="145" height="145"/>
+        <image name="tab_download_h" width="64" height="45"/>
+        <image name="tab_download_n" width="64" height="45"/>
+        <image name="tab_home_h" width="64" height="45"/>
+        <image name="tab_home_n" width="64" height="45"/>
+        <image name="tab_share_h" width="64" height="45"/>
+        <image name="tab_share_n" width="64" height="45"/>
+    </resources>
+</document>

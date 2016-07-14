@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:6.3-&#x6c7d;&#x8f66;&#x54c1;&#x724c;&#x5c55;&#x793a;/6.3-&#x6c7d;&#x8f66;&#x54c1;&#x724c;&#x5c55;&#x793a;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:6.2-UITableView&#x5c55;&#x793a;&#x591a;&#x7ec4;&#x6570;&#x636e;/6.2-UITableView&#x5c55;&#x793a;&#x591a;&#x7ec4;&#x6570;&#x636e;.xcodeproj">
    </FileRef>
    <FileRef

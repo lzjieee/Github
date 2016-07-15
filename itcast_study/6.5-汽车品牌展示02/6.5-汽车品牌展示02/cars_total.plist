@@ -77,5 +77,42 @@
 		<key>title</key>
 		<string>C</string>
 	</dict>
+	<dict>
+		<key>cars</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>dfxtl.png</string>
+				<key>name</key>
+				<string>东风雪铁龙</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>dihao.png</string>
+				<key>name</key>
+				<string>帝豪</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>dazhong.png</string>
+				<key>name</key>
+				<string>大众</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>daoqi.png</string>
+				<key>name</key>
+				<string>道奇</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>dffs.png</string>
+				<key>name</key>
+				<string>东风风神</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>D</string>
+	</dict>
 </array>
 </plist>

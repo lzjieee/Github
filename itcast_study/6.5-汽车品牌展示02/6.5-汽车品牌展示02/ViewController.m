@@ -136,7 +136,7 @@
         //3.修改model的name
         car.name = name;
         //4.刷新tableview
-        //刷新一个cell
+        //刷新一个cell(总行数不变的时候才能使用这个，总行数变化了必须整个刷新,因为局部刷新其实是先删除该行，再重新显示)
         //4.1创建行对象
         NSIndexPath *idxPath = [NSIndexPath indexPathForRow:self.rowIndex inSection:self.groupIndex];
         [self.tableView reloadRowsAtIndexPaths:@[idxPath] withRowAnimation:UITableViewRowAnimationLeft];

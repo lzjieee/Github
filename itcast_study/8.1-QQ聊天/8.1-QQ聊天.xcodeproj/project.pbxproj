@@ -18,6 +18,8 @@
 		8A16465D1D41F3C80064E076 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A16465C1D41F3C80064E076 /* messages.plist */; };
 		8A1646601D41F5180064E076 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A16465F1D41F5180064E076 /* Message.m */; };
 		8A1646631D41FD390064E076 /* MessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1646621D41FD390064E076 /* MessageFrame.m */; };
+		8A1646661D45BF560064E076 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1646651D45BF560064E076 /* MessageCell.m */; };
+		8A16466A1D4628760064E076 /* NSString+LJNSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1646691D4628760064E076 /* NSString+LJNSStringExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		8A16465F1D41F5180064E076 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		8A1646611D41FD390064E076 /* MessageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFrame.h; sourceTree = "<group>"; };
 		8A1646621D41FD390064E076 /* MessageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFrame.m; sourceTree = "<group>"; };
+		8A1646641D45BF560064E076 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		8A1646651D45BF560064E076 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		8A1646681D4628760064E076 /* NSString+LJNSStringExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJNSStringExt.h"; sourceTree = "<group>"; };
+		8A1646691D4628760064E076 /* NSString+LJNSStringExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJNSStringExt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 		8A1646581D40C9690064E076 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				8A1646671D4627F20064E076 /* Categories */,
 				8A1646281D40C9630064E076 /* AppDelegate.h */,
 				8A1646291D40C9630064E076 /* AppDelegate.m */,
 			);
@@ -162,6 +169,8 @@
 			children = (
 				8A16462E1D40C9630064E076 /* Main.storyboard */,
 				8A1646331D40C9630064E076 /* LaunchScreen.storyboard */,
+				8A1646641D45BF560064E076 /* MessageCell.h */,
+				8A1646651D45BF560064E076 /* MessageCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -184,6 +193,15 @@
 				8A1646621D41FD390064E076 /* MessageFrame.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		8A1646671D4627F20064E076 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8A1646681D4628760064E076 /* NSString+LJNSStringExt.h */,
+				8A1646691D4628760064E076 /* NSString+LJNSStringExt.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +338,8 @@
 				8A16462D1D40C9630064E076 /* ViewController.m in Sources */,
 				8A1646601D41F5180064E076 /* Message.m in Sources */,
 				8A1646631D41FD390064E076 /* MessageFrame.m in Sources */,
+				8A1646661D45BF560064E076 /* MessageCell.m in Sources */,
+				8A16466A1D4628760064E076 /* NSString+LJNSStringExt.m in Sources */,
 				8A16462A1D40C9630064E076 /* AppDelegate.m in Sources */,
 				8A1646271D40C9630064E076 /* main.m in Sources */,
 			);

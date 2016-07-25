@@ -17,7 +17,7 @@
         [self setValuesForKeysWithDictionary:dict];
     }
     
-    return 0;
+    return self;
 }
 
 + (instancetype)messageWithDict:(NSDictionary *)dict

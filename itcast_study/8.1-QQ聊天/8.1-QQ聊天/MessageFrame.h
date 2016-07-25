@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#define textFont [UIFont systemFontOfSize:14]
 
 @class Message;
 @interface MessageFrame : NSObject

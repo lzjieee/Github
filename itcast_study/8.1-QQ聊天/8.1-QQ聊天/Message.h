@@ -17,7 +17,9 @@ typedef enum{
 
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSString *time;
-@property (nonatomic, assign) MessageType *type;
+@property (nonatomic, assign) MessageType type;
+//记录是否显示时间label
+@property (nonatomic, assign) BOOL hideTime;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)messageWithDict:(NSDictionary *)dict;

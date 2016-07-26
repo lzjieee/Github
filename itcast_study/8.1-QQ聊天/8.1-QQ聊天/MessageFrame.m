@@ -42,8 +42,8 @@
     //先计算正文的大小（思路：为字符串写一个分类，增加一个计算字符串长度的方法）
     
     CGSize textSize = [message.text sizeOfTextWithMaxSize:CGSizeMake(200, MAXFLOAT) font:textFont];
-    CGFloat textW = textSize.width;
-    CGFloat textH = textSize.height;
+    CGFloat textW = textSize.width + 40;
+    CGFloat textH = textSize.height + 30;
     CGFloat textY = iconY;
     CGFloat textX = message.type == MessageTypeOther ? CGRectGetMaxX(_iconFrame) : (screenW - margin - iconW - textW);
     _textFrame = CGRectMake(textX, textY, textW, textH);

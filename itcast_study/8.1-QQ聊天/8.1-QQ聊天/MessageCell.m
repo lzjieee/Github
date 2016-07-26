@@ -47,6 +47,8 @@
         [btnText setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         //设置文字换行
         btnText.titleLabel.numberOfLines = 0;
+        //设置内边距
+        btnText.contentEdgeInsets = UIEdgeInsetsMake(15, 20, 15, 20);
         self.btnText = btnText;
     }
     
@@ -74,6 +76,33 @@
     
     [self.btnText setTitle:message.text forState:UIControlStateNormal];
     self.btnText.frame = messageFrame.textFrame;
+    
+    //设置正文背景图
+    NSString *imgNor, *imgHighted;
+    if (message.type == MessageTypeMe)
+    {
+        //自己发的消息
+        imgNor = @"chat_send_nor";
+        imgHighted = @"chat_send_press_pic";
+        [self.btnText setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }
+    else
+    {
+        //对方发的消息
+        imgNor = @"chat_recive_nor";
+        imgHighted = @"chat_recive_press_pic";
+        [self.btnText setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+    
+    //加载图片，设置背景图
+    UIImage *imageNormal = [UIImage imageNamed:imgNor];
+    UIImage *imageHighted = [UIImage imageNamed:imgHighted];
+    //用平铺方式拉伸图片
+    imageNormal = [imageNormal stretchableImageWithLeftCapWidth:imageNormal.size.width * .5f topCapHeight:imageNormal.size.height * .5f];
+    imageHighted = [imageHighted stretchableImageWithLeftCapWidth:imageHighted.size.width * .5f topCapHeight:imageHighted.size.height * .5f];
+    
+    [self.btnText setBackgroundImage:imageNormal forState:UIControlStateNormal];
+    [self.btnText setBackgroundImage:imageHighted forState:UIControlStateHighlighted];
     
 }
 

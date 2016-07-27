@@ -10,6 +10,13 @@
 #import "NotificationListener.h"
 #import "NotificationSender.h"
 
+/**
+    监听有3种方式：
+    1.addTarget
+    2.代理（代理只能是1对1）
+    3.通知（通知可以多对多）--- 一般系统的事件用通知（如设备旋转、电池电量、近端传输、键盘弹出。。。）
+ */
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         

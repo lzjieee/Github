@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:10.1-&#x4f7f;&#x7528;autoresizing&#x5b9e;&#x73b0;&#x5c4f;&#x5e55;&#x9002;&#x914d;/10.1-&#x4f7f;&#x7528;autoresizing&#x5b9e;&#x73b0;&#x5c4f;&#x5e55;&#x9002;&#x914d;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:9.4-KVC&#x5e38;&#x7528;&#x65b9;&#x6cd5;&#x6f14;&#x793a;/9.4-KVC&#x5e38;&#x7528;&#x65b9;&#x6cd5;&#x6f14;&#x793a;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:9.3-&#x5e94;&#x7528;&#x7ba1;&#x7406;/9.3-&#x5e94;&#x7528;&#x7ba1;&#x7406;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:9.2-&#x597d;&#x53cb;&#x5217;&#x8868;/9.2-&#x597d;&#x53cb;&#x5217;&#x8868;.xcodeproj">
    </FileRef>
    <FileRef

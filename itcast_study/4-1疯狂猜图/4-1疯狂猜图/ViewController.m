@@ -10,6 +10,7 @@
 #import "Question.h"
 
 @interface ViewController () <UIAlertViewDelegate>
+- (IBAction)btnClicked:(id)sender;
 
 //所有问题的数据
 @property(nonatomic, strong) NSArray *questions;
@@ -381,4 +382,6 @@
     }
 }
 
+- (IBAction)btnClicked:(id)sender {
+}
 @end

@@ -42,6 +42,8 @@
 }
 
 //正在拖拽
+- (IBAction)btnClicked:(id)sender {
+}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     //NSLog(@"---->正在拖拽...scrollViewDidScroll");

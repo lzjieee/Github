@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvN-kc-8jE" userLabel="blueView">
+                                <rect key="frame" x="30" y="30" width="540" height="50"/>
+                                <color key="backgroundColor" red="0.50005754339999997" green="0.70376046879999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Umw-lf-ZKa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72F-II-WCW" userLabel="redView">
+                                <rect key="frame" x="300" y="110" width="270" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.3502072678" blue="0.40777406420000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BvN-kc-8jE" secondAttribute="trailing" constant="30" id="1aS-wm-G4x"/>
+                            <constraint firstItem="BvN-kc-8jE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="3Dt-l4-A0g"/>
+                            <constraint firstItem="72F-II-WCW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Y7-xc-3or"/>
+                            <constraint firstItem="72F-II-WCW" firstAttribute="height" secondItem="BvN-kc-8jE" secondAttribute="height" id="Fup-LE-3us"/>
+                            <constraint firstItem="BvN-kc-8jE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Lxc-dJ-Mpg"/>
+                            <constraint firstItem="72F-II-WCW" firstAttribute="trailing" secondItem="BvN-kc-8jE" secondAttribute="trailing" id="OlV-vB-td9"/>
+                            <constraint firstItem="72F-II-WCW" firstAttribute="top" secondItem="BvN-kc-8jE" secondAttribute="bottom" constant="30" id="krD-d2-gzh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

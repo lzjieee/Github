@@ -202,5 +202,65 @@
 		<key>topMenu</key>
 		<integer>1</integer>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>购物</string>
+		<key>icon</key>
+		<string>oversea_default_head_buy.png</string>
+		<key>desc</key>
+		<string>疯狂购物季</string>
+		<key>topMenu</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>美食</string>
+		<key>icon</key>
+		<string>oversea_default_head_food.png</string>
+		<key>desc</key>
+		<string>天天美食节</string>
+		<key>topMenu</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>休闲娱乐</string>
+		<key>icon</key>
+		<string>oversea_default_head_fun.png</string>
+		<key>desc</key>
+		<string>下班hai翻天</string>
+		<key>topMenu</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>酒店</string>
+		<key>icon</key>
+		<string>oversea_default_head_hotel.png</string>
+		<key>desc</key>
+		<string>国庆最低价</string>
+		<key>topMenu</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>生活服务</string>
+		<key>icon</key>
+		<string>oversea_default_head_life.png</string>
+		<key>desc</key>
+		<string>无微不至的贴心</string>
+		<key>topMenu</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>景点</string>
+		<key>icon</key>
+		<string>oversea_default_head_scenic.png</string>
+		<key>desc</key>
+		<string>我带着你，你带着钱</string>
+		<key>topMenu</key>
+		<integer>0</integer>
+	</dict>
 </array>
 </plist>

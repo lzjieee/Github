@@ -19,6 +19,8 @@
 		0474C57F1D7A06BD0005AC51 /* Item.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0474C57E1D7A06BD0005AC51 /* Item.plist */; };
 		0474C5841D7A09A40005AC51 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474C5831D7A09A40005AC51 /* Menu.m */; };
 		0474C5871D7A11E30005AC51 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474C5861D7A11E30005AC51 /* Item.m */; };
+		8A44822F1D8FFB4C00C5B292 /* TopMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A44822E1D8FFB4C00C5B292 /* TopMenuCell.m */; };
+		8A4482321D928ACF00C5B292 /* MidMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4482311D928ACF00C5B292 /* MidMenuCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		0474C5831D7A09A40005AC51 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		0474C5851D7A11E30005AC51 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		0474C5861D7A11E30005AC51 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		8A44822D1D8FFB4C00C5B292 /* TopMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuCell.h; sourceTree = "<group>"; };
+		8A44822E1D8FFB4C00C5B292 /* TopMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuCell.m; sourceTree = "<group>"; };
+		8A4482301D928ACF00C5B292 /* MidMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidMenuCell.h; sourceTree = "<group>"; };
+		8A4482311D928ACF00C5B292 /* MidMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidMenuCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,10 @@
 			children = (
 				0474C54C1D79EE7F0005AC51 /* Main.storyboard */,
 				0474C5511D79EE7F0005AC51 /* LaunchScreen.storyboard */,
+				8A44822D1D8FFB4C00C5B292 /* TopMenuCell.h */,
+				8A44822E1D8FFB4C00C5B292 /* TopMenuCell.m */,
+				8A4482301D928ACF00C5B292 /* MidMenuCell.h */,
+				8A4482311D928ACF00C5B292 /* MidMenuCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -320,10 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4482321D928ACF00C5B292 /* MidMenuCell.m in Sources */,
 				0474C5871D7A11E30005AC51 /* Item.m in Sources */,
 				0474C54B1D79EE7F0005AC51 /* ViewController.m in Sources */,
 				0474C5481D79EE7F0005AC51 /* AppDelegate.m in Sources */,
 				0474C5841D7A09A40005AC51 /* Menu.m in Sources */,
+				8A44822F1D8FFB4C00C5B292 /* TopMenuCell.m in Sources */,
 				0474C5451D79EE7F0005AC51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MeituanApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.MeituanApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MeituanApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzj.MeituanApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +564,7 @@
 				0474C56F1D79EE7F0005AC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0474C5701D79EE7F0005AC51 /* Build configuration list for PBXNativeTarget "MeituanAppTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +573,7 @@
 				0474C5721D79EE7F0005AC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0474C5731D79EE7F0005AC51 /* Build configuration list for PBXNativeTarget "MeituanAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +582,7 @@
 				0474C5751D79EE7F0005AC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

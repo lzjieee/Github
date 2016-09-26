@@ -20,131 +20,131 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>蓉鱼</string>
 		<key>desc</key>
 		<string>[建设六马路]100元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>85</string>
 		<key>rackRate</key>
-		<string>100</string>
+		<string>120</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>333</string>
 		<key>distance</key>
-		<string>6.4km</string>
+		<string>4.1km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>rongyu.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>KFC</string>
 		<key>desc</key>
-		<string>[建设六马路]100元代金券1份，可叠加</string>
+		<string>[天河路]20元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>15</string>
 		<key>rackRate</key>
-		<string>100</string>
+		<string>20</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>18853</string>
 		<key>distance</key>
-		<string>6.4km</string>
+		<string>0.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>kfc.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>万岁寿司</string>
 		<key>desc</key>
-		<string>[建设六马路]100元代金券1份，可叠加</string>
+		<string>[体育东路]500元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>350</string>
 		<key>rackRate</key>
-		<string>100</string>
+		<string>500</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>99</string>
 		<key>distance</key>
-		<string>6.4km</string>
+		<string>2.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>wangsui.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>O记茶餐厅</string>
 		<key>desc</key>
-		<string>[建设六马路]100元代金券1份，可叠加</string>
+		<string>[珠江新城]100元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>85</string>
 		<key>rackRate</key>
 		<string>100</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>666</string>
 		<key>distance</key>
-		<string>6.4km</string>
+		<string>11.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>oji.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>点都德</string>
 		<key>desc</key>
-		<string>[建设六马路]100元代金券1份，可叠加</string>
+		<string>[中山六]100元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>88</string>
 		<key>rackRate</key>
 		<string>100</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>45645</string>
 		<key>distance</key>
-		<string>6.4km</string>
+		<string>8.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>diandoude.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>广州酒家</string>
 		<key>desc</key>
-		<string>[建设六马路]100元代金券1份，可叠加</string>
+		<string>[体育东路]100元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>95</string>
 		<key>rackRate</key>
 		<string>100</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>11235</string>
 		<key>distance</key>
-		<string>6.4km</string>
+		<string>5.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>gzjiujia.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>subway</string>
 		<key>desc</key>
 		<string>[建设六马路]100元代金券1份，可叠加</string>
 		<key>price</key>
-		<string>90</string>
+		<string>75</string>
 		<key>rackRate</key>
 		<string>100</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>32</string>
 		<key>distance</key>
 		<string>6.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>subway.png</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>勇志烤肉</string>
+		<string>四海一家</string>
 		<key>desc</key>
-		<string>[建设六马路]100元代金券1份，可叠加</string>
+		<string>[建设六马路]自助餐一位</string>
 		<key>price</key>
-		<string>90</string>
+		<string>135</string>
 		<key>rackRate</key>
-		<string>100</string>
+		<string>168</string>
 		<key>buyCount</key>
-		<string>1885</string>
+		<string>11212</string>
 		<key>distance</key>
 		<string>6.4km</string>
 		<key>icon</key>
-		<string>yongzhi.png</string>
+		<string>sihaiyijia.png</string>
 	</dict>
 	<dict>
 		<key>name</key>

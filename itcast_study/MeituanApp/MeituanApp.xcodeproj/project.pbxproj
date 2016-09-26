@@ -21,6 +21,7 @@
 		0474C5871D7A11E30005AC51 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474C5861D7A11E30005AC51 /* Item.m */; };
 		8A44822F1D8FFB4C00C5B292 /* TopMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A44822E1D8FFB4C00C5B292 /* TopMenuCell.m */; };
 		8A4482321D928ACF00C5B292 /* MidMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4482311D928ACF00C5B292 /* MidMenuCell.m */; };
+		8A4482351D98F63900C5B292 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4482341D98F63900C5B292 /* ItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		8A44822E1D8FFB4C00C5B292 /* TopMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuCell.m; sourceTree = "<group>"; };
 		8A4482301D928ACF00C5B292 /* MidMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidMenuCell.h; sourceTree = "<group>"; };
 		8A4482311D928ACF00C5B292 /* MidMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidMenuCell.m; sourceTree = "<group>"; };
+		8A4482331D98F63900C5B292 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		8A4482341D98F63900C5B292 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				8A44822E1D8FFB4C00C5B292 /* TopMenuCell.m */,
 				8A4482301D928ACF00C5B292 /* MidMenuCell.h */,
 				8A4482311D928ACF00C5B292 /* MidMenuCell.m */,
+				8A4482331D98F63900C5B292 /* ItemCell.h */,
+				8A4482341D98F63900C5B292 /* ItemCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				0474C5871D7A11E30005AC51 /* Item.m in Sources */,
 				0474C54B1D79EE7F0005AC51 /* ViewController.m in Sources */,
 				0474C5481D79EE7F0005AC51 /* AppDelegate.m in Sources */,
+				8A4482351D98F63900C5B292 /* ItemCell.m in Sources */,
 				0474C5841D7A09A40005AC51 /* Menu.m in Sources */,
 				8A44822F1D8FFB4C00C5B292 /* TopMenuCell.m in Sources */,
 				0474C5451D79EE7F0005AC51 /* main.m in Sources */,

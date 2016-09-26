@@ -11,6 +11,7 @@
 #import "Item.h"
 #import "TopMenuCell.h"
 #import "MidMenuCell.h"
+#import "ItemCell.h"
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
@@ -65,7 +66,7 @@
 #pragma mark - 实现TableView数据源方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return self.items.count + 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -85,38 +86,15 @@
         cell.menus = [self getMidMenuDatas];
         return cell;
     }
-    
-    //声明一个重用id (加static是为了ID不要经常被删除创建，知道应用退出才销毁ID)
-    static NSString *ID = @"hero_cell";
-    //根据这个重用id去缓存中查找对应的cell
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
-    if (cell == nil)
+    else
     {
-        //在创建cell的时候指定一个重用id reuseIdentifier，当指定了这个值，当这个cell滚出，就会自动放到缓存池里
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+        ItemCell *cell = [ItemCell itemCellWithTable:tableView];
+        if(indexPath.row - 2 >= 0)
+        {
+            cell.item = [self.items objectAtIndex:indexPath.row - 2];
+        }
+        return cell;
     }
-    
-    cell.textLabel.text = @"ssss";
-    
-    //设置单元格右边小箭头
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    //(自定义右边)当上面accessoryType的属性不够用，你想右边显示其他的时候
-    //cell.accessoryView = [[UISwitch alloc] init];
-    
-    //------------- 设置单元格的属性 ---------------
-    
-    //单元格背景色
-    //cell.backgroundColor = [UIColor yellowColor];
-    
-    //设置选中的背景色（由于没有直接的属性设置，可以通过）
-    //    UIView *bgview = [[UIView alloc] init];
-    //    bgview.backgroundColor = [UIColor greenColor];
-    //    cell.selectedBackgroundView = bgview;
-    
-    //cell.backgroundView (可以利用这个属性来设置单元格图片，等)
-    
-    return cell;
 }
 
 #pragma mark - 实现TableView代理方法，指定行高

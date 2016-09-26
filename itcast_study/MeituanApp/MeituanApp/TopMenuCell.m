@@ -67,6 +67,10 @@
 // 创建scrollview
 - (void)createScrollView
 {
+    // fix:当外层的tableview滑动，触发刷新cell的时候，会导致拥有scrollview的cell重新创建如果创建之前没有删除就会出现多个scrollview叠加的情况
+    // 删除以前创建的scrollview
+    [[self.contentView viewWithTag:1000] removeFromSuperview];
+    
     int totalPage = (int)(self.menus.count - 1) / 8 + 1;
     // 创建scrollview
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 375, 150)];
@@ -76,6 +80,7 @@
     scrollView.bounces = NO;
     scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView = scrollView;
+    self.scrollView.tag = 1000;
     [self.contentView addSubview:scrollView];
     
     // 设置topmenu的ui
